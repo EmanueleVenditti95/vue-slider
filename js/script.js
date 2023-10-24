@@ -32,22 +32,21 @@ createApp({
 
     methods : {
 
-        changeSlide(){
-
-        },
-
         nextSlide(){
             this.currentIndex++;
             console.log(this.currentIndex)
+            if (this.currentIndex === this.slides.length){
+                this.currentIndex = 0;
+            }
         },
 
         prevSlide(){
             this.currentIndex--;
             console.log(this.currentIndex)
+            if (this.currentIndex < 0) {
+                this.currentIndex = this.slides.length -1
+            }
         }
-    },
-
-    mounted() {
     }
 }).mount('#app')
 
