@@ -55,6 +55,10 @@ createApp({
             if (this.currentIndex < 0) {
                 this.currentIndex = this.slides.length - 1
             }
+        },
+
+        goToSlide (index) {
+           this.currentIndex = index; 
         }
     },
 
