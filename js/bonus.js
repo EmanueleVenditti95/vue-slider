@@ -62,7 +62,8 @@ createApp({
         }
     },
 
-    mounted() {
+    beforeMount() {
+        setInterval(this.nextSlide,3000)
     }
 }).mount('#app')
 
