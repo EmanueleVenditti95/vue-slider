@@ -57,4 +57,8 @@ createApp({
             }
         }
     },
+
+    mounted() {
+    }
 }).mount('#app')
+

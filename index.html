@@ -16,8 +16,8 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item" :class="currentIndex === index ? 'active' : 'hide'" 
-                v-for="(slide,index) in slides">
+                <div class="item" :class="currentIndex === index ? 'active' : 'hide'"
+                 v-for="(slide,index) in slides">
                     <img :src="slide.image" alt="" />
                     <div class="text">
                         <h3>{{ slide.title }}</h3>
@@ -28,16 +28,16 @@
                 <div class="thumbs">
                     <div class="prev" @click="prevSlide()"></div>
                     <div class="next" @click="nextSlide()"></div>
-                    <!-- <div class="thumb" v-for="((image,index) in thumbs.images)">
+                    <div class="thumb" v-for="(image,index) in thumbs.images">
                         <img :src="image" alt="" />
-                    </div> -->
+                    </div>
                 </div>
             </div>
-
         </div>
+    </div>
 
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-        <script src="./js/bonus.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/bonus.js"></script>
 </body>
 
 </html>
